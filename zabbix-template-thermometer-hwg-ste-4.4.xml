@@ -208,7 +208,7 @@
                     <preprocessing>
                         <step>
                             <type>JAVASCRIPT</type>
-                            <params>const units = ['unknown', '°C', '°F', '°K', '%'];
+                            <params>const units = ['unknown', '°C', '°F', '°K', '% RH'];
 
 const result = JSON.parse(value).map(function (row) {
   row[&quot;{#SENSOR_UNIT}&quot;] = units[row[&quot;{#SENSOR_UNIT}&quot;]];
