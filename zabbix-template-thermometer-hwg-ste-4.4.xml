@@ -147,8 +147,8 @@
                             <trigger_prototypes>
                                 <trigger_prototype>
                                     <expression>{min(#2)}&lt;&gt;1</expression>
-                                    <name>HWg-STE thermometer {HOST.NAME} sensor {#SENSOR_NAME} is in alarm state</name>
-                                    <opdata>Current state: {ITEM.LASTVALUE}</opdata>
+                                    <name>HWg-STE thermometer {HOST.NAME} sensor {#SENSOR_NAME} is in alarm state: {ITEM.VALUE1} [sensor measures {#SENSOR_UNIT}]</name>
+                                    <opdata>Current state: {ITEM.LASTVALUE1}</opdata>
                                     <url>http://{HOST.IP}</url>
                                     <priority>HIGH</priority>
                                     <manual_close>YES</manual_close>
